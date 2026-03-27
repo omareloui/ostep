@@ -1,5 +1,4 @@
-#ifndef __common_threads_h__
-#define __common_threads_h__
+#pragma once
 
 #include <pthread.h>
 #include <assert.h>
@@ -29,5 +28,3 @@
 #define Sem_wait(sem)                                    assert(sem_wait(sem) == 0);
 #define Sem_post(sem)                                    assert(sem_post(sem) == 0);
 #endif // __linux__
-
-#endif // __common_threads_h__

@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
 
   assert(fd > -1);
 
-  int rc = write(fd, "hello world!\n", 14);
+  int rc = write(fd, "hello, world!\n", 14);
   assert(rc == 14);
 
   close(fd);

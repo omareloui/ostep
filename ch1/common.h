@@ -1,5 +1,4 @@
-#ifndef __common_h__
-#define __common_h__
+#pragma once
 
 #include <assert.h>
 #include <stdlib.h>
@@ -18,5 +17,3 @@ void Spin(int howlong) {
   while ((GetTime() - t) < (double)howlong)
     ; // do nothing in loop
 }
-
-#endif // __common_h__
